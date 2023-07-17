@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            style = "@style/storeNameStyle" />
+        <EditText
+            android:id="@+id/input_name"
+            style = "@style/input_name_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/decrement_button"
+                style="@style/decrement_button_style"
+                android:onClick="decrement" />
+            <TextView
+                android:id="@+id/quantity_text_view2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFFF00"
+                android:gravity="center"
+                android:text="購買數量：0"
+                android:textColor="#FF003B"
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/increment_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="increment"
+                android:text="+"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/addPlasticBag_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="加買購物袋2元" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="訂單資訊:"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/summary_text_view4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buy_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:onClick="submitOrder"
+            android:text="送出訂單"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>
