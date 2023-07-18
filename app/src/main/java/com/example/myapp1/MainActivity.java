@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
         // 開啟second activity
         Intent i = new Intent(getApplicationContext(), secondActivity.class);
-        startActivity(i);//播完之後就結束了，怎麼讓它可以播完載波一次？
+        startActivity(i);//播完之後就結束了，怎麼讓它可以播完載波一次？(最後升級完一些軟體就解決了)
     }
 
     private void display_quantity(int number, TextView NumberTextView) {
