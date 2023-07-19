@@ -82,7 +82,7 @@ public class secondActivity extends AppCompatActivity{
     @Override
     protected void onDestroy() {
         Log.v("test", "onDestroy() call");
-        //Toast.makeText(this, "Toast 基本用法", Toast.LENGTH_SHORT).show();
+        // Toast.makeText(this, "Toast 基本用法", Toast.LENGTH_SHORT).show();
         if(mediaPlayer!=null){
             mediaPlayer.stop();
             mediaPlayer.release();
