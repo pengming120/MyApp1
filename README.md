@@ -1,5 +1,7 @@
 # MyApp1
 
+HackMD學習筆記: https://hackmd.io/01A3wDlWQ4C-Pa3gJDfDaw
+
 初始畫面：
 
 ![image](https://github.com/pengming120/MyApp1/assets/43168284/625f04ca-f467-4270-afc2-5f7811e5df1f)
